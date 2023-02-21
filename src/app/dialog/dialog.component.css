@@ -1,0 +1,44 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #7b8b9dcf;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.dialog {
+  box-shadow: 0 2px 5px rgb(0 0 0 / 25%), 0 2px 9px rgb(0 0 0 / 22%);
+  background-color: white;
+  min-width: 50%;
+  min-height: 50%;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  padding: 8px;
+  /* align-items: center; */
+  border-radius: 10px;
+  position: relative;
+}
+
+span.close-btn {
+  height: 30px;
+  width: 30px;
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 4%;
+  cursor: pointer;
+}
+
+.top-space {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
