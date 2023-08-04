@@ -11,6 +11,10 @@
 npm-debug.log
 yarn-error.log
 
+src/css
+src/img
+src/fonts
+
 # IDEs and editors
 .idea/
 .project

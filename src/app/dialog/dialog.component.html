@@ -1,27 +1,10 @@
-<!-- <div class="overlay">
+<div class="overlay">
   <div class="dialog" style="overflow-y: auto;" [ngStyle]="{'width': config.data.style?.width || 'none'}" (click)="onDialogClicked($event)">
     <div class="top-space">
-      <span class="close-btn close-dialog-icon" (click)="close()"></span>
+      <button class="btn btn-default-reverse btn-block btn-sm close-btn" type="button" (click)="close()">Chiudi</button>
     </div>
     <div class="container-fluid">
       <ng-template appInsertion></ng-template>
-    </div>
-  </div>
-</div> -->
-
-<div class="modal-backdrop fade in"></div>
-<div class="modal fade in scroll" role="dialog" style="display: block" [ngStyle]="{'width': config.data.style?.width || 'none'}">
-  <div class="modal-dialog" role="document" (click)="onDialogClicked($event)">
-    <div class="modal-content">
-      <p class="col-sm-2 col-sm-offset-10">
-        <button class="btn btn-default-reverse btn-block btn-sm" type="button" (click)="close()">Chiudi</button>
-      </p>
-      <div class="titleblock" *ngIf="config.data.title">
-        <h3 class="title1level">{{config.data.title}}</h3>
-      </div>
-      <div class="container_dati_generali scroll">
-        <ng-template appInsertion></ng-template>
-      </div>
     </div>
   </div>
 </div>

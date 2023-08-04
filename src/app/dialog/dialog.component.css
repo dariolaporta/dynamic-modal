@@ -6,10 +6,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #7b8b9dcf;
   align-items: center;
   justify-content: center;
   z-index: 99;
+  background: #0000008c;
 }
 
 .dialog {
@@ -22,7 +22,7 @@
   flex-direction: column; */
   padding: 8px;
   /* align-items: center; */
-  border-radius: 10px;
+  border-radius: 0;
   position: relative;
 }
 
@@ -46,4 +46,9 @@ span.close-btn {
 .scroll {
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.close-btn {
+  max-width: fit-content;
+  float: right;
 }

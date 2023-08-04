@@ -25,7 +25,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/ui-bootstrap-csp.css",
+              "src/css/angular-bootstrap-calendar.min.css",
+              "src/css/calendar.css",
+              "src/css/jquery-ui.css",
+              "src/css/bootstrap.css",
+              "src/css/default.css",
+              "src/css/spinkit.css",
+              "src/css/pratica.css",
+              "src/css/tooltip.css"
             ],
             "scripts": []
           },
