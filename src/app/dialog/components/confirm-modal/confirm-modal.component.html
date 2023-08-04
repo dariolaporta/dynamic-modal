@@ -1,0 +1,16 @@
+<div class="title" *ngIf="title">
+  <div class="coldx">
+    <h4>{{title}}</h4>
+  </div>
+</div>
+<div class="row message-wrapper">
+  <div class="col-sm-12" [innerHTML]="mainText"></div>
+</div>
+<div class="row" *ngIf="!hideButtons">
+  <p class="col-sm-3 col-xs-3 col-xs-offset-6 col-sm-offset-6">
+    <button (click)="onAction(true)" class="btn btn-primary btn-block">Si</button>
+  </p>
+  <p class="col-sm-3 col-xs-3">
+    <button (click)="onAction(false)" class="btn btn-primary btn-block">No</button>
+  </p>
+</div>

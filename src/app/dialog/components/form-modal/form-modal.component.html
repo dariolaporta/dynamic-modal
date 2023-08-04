@@ -1,0 +1,11 @@
+<div class="title">
+  <div class="coldx ">
+    <h4>{{formTitle}}</h4>
+  </div>
+</div>
+<app-dynamic-form
+  [questions]="formFields"
+  [config]="formConfiguration"
+  (onFormSubmit)="submit($event)"
+  (onFormReset)="reset()">
+</app-dynamic-form>

@@ -1,4 +1,4 @@
-import { Injector, Type, InjectionToken, InjectFlags } from '@angular/core';
+import { InjectFlags, InjectionToken, Injector, Type } from '@angular/core';
 
 export class DialogInjector implements Injector {
   constructor(private _parentInjector: Injector, private _additionalTokens: WeakMap<any, any>) {}

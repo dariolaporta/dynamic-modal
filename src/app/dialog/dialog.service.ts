@@ -1,9 +1,17 @@
-import { Injectable, ComponentFactoryResolver, ApplicationRef, Injector, Type, EmbeddedViewRef, ComponentRef } from '@angular/core';
-import { DialogModule } from './dialog.module';
-import { DialogComponent } from './dialog.component';
-import { DialogInjector } from './dialog-injector';
+import {
+  ApplicationRef,
+  ComponentFactoryResolver,
+  ComponentRef,
+  EmbeddedViewRef,
+  Injectable,
+  Injector,
+  Type
+} from '@angular/core';
 import { DialogConfig } from './dialog-config';
+import { DialogInjector } from './dialog-injector';
 import { DialogRef } from './dialog-ref';
+import { DialogComponent } from './dialog.component';
+import { DialogModule } from './dialog.module';
 
 @Injectable({
   providedIn: DialogModule
@@ -28,6 +36,7 @@ export class DialogService {
     map.set(DialogRef, dialogRef);
 
     const sub = dialogRef.afterClosed.subscribe(() => {
+
       this.removeDialogComponentFromBody();
       sub.unsubscribe();
     });
@@ -42,7 +51,9 @@ export class DialogService {
 
     this.dialogComponentRef = componentRef;
 
+
     this.dialogComponentRef.instance.onClose.subscribe(() => {
+      dialogRef._onClickExit.next(null);
       this.removeDialogComponentFromBody();
     });
 
